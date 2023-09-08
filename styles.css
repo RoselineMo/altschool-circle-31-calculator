@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-/* Ayomide also styled the form  */
 form {
   display: flex;
   flex-direction: column;
@@ -15,7 +14,6 @@ form {
   border-radius: 10px;
   width: 390px;
 }
-/* Ayomide also styled the input,output and the input-buttons */
 form input{
   border: 0;
   outline: 0;
