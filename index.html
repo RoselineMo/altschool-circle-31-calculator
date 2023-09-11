@@ -3,57 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator-assignment</title>
+    <title>AltSchool Circle 31 Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- the container of the calculator -->
     <div class="container">
-      <div class="calculator">
-        <!-- I added the oninput to the form -->
-        <form oninput="x.value=parseInt(b.value)">
-          <div class="displays">
-            <input type="text" id="b" name="display" />
-            <!-- and i the output for the input -->
-            <output name="x" for="b"></output>
-          </div>
-
-          <div class="fa calc-btn">
-            <input class="ac" type="button" value="AC" />
-            <input class="ac" type="button" value="DE" />
-            <input class="ac" type="button" value="." />
-            <input class="ac" type="button" value="/" />
-          </div>
-
-          <div class="fa">
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
-            <input class="ac" type="button" value="*" />
-          </div>
-
-          <div class="fa">
-            <input type="button" value="4" />
-            <input type="button" value="5" />
-            <input type="button" value="6" />
-            <input class="ac" type="button" value="-" />
-          </div>
-
-          <div class="fa">
-            <input type="button" value="1" />
-            <input type="button" value="2" />
-            <input type="button" value="3" />
-            <input class="ac" type="button" value="+" />
-          </div>
-
-          <div class="fa last">
-            <input type="button" value="00" />
-            <input type="button" value="0" />
-            <input type="button" value="=" class="equal ac" />
-          </div>
-          <script src="script.js"></script>
-        </form>
+      <!-- Display Screen -->
+      <form>
+      <div class="display">
+        <input type="text" name="display" />
+        <output></output>
       </div>
+
+      <!-- Top Buttons -->
+      <div class="operator-buttons fa">
+        <input class="ac" type="button" value="AC" />
+        <input class="ac" type="button" value="DE" />
+        <input class="ac" type="button" value="." />
+        <input class="ac" type="button" value="/" />
+      </div>
+
+      <!-- Other Buttons -->
+      <div class="number-buttons fa">
+        <div>
+          <input type="button" value="7" />
+          <input type="button" value="8" />
+          <input type="button" value="9" />
+          <input class="ac" type="button" value="*" />
+        </div>
+
+        <div class="fa">
+          <input type="button" value="4" />
+          <input type="button" value="5" />
+          <input type="button" value="6" />
+          <input class="ac" type="button" value="-" />
+        </div>
+
+        <div class="fa">
+          <input type="button" value="1" />
+          <input type="button" value="2" />
+          <input type="button" value="3" />
+          <input class="ac" type="button" value="+" />
+        </div>
+
+        <div class="fa last ">
+          <input type="button" value="00" />
+          <input type="button" value="0" />
+          <input type="button" value="=" class="equal ac" />
+        </div>
+      </div>
+      </form>
     </div>
   </body>
 </html>

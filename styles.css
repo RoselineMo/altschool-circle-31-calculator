@@ -8,7 +8,7 @@ body{
   background-color: #E4F7FE;
 }
 
-form .fa input{
+ .fa input{
   border: 0;
   outline: 0;
   width: 60px;
@@ -22,9 +22,9 @@ form .fa input{
   cursor: pointer;
 }
 
-form .fa .equal{
+ .fa .equal{
   width: 9rem;
 }
-form .fa .ac{
+ .fa .ac{
   color:#10d4ee;
 }
