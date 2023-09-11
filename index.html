@@ -9,48 +9,50 @@
   <body>
     <div class="container">
       <!-- Display Screen -->
-      <div class="display">
-        <input type="text" name="display" />
-        <output></output>
-      </div>
-
-      <!-- Top Buttons -->
-      <div class="operator-buttons">
-        <input type="button" value="AC" />
-        <input type="button" value="DE" />
-        <input type="button" value="." />
-        <input type="button" value="/" />
-      </div>
-
-      <!-- Other Buttons -->
-      <div class="number-buttons">
-        <div>
-          <input type="button" value="7" />
-          <input type="button" value="8" />
-          <input type="button" value="9" />
-          <input type="button" value="*" />
+      <form>
+        <div class="display">
+          <input type="text" name="display" />
+          <output></output>
         </div>
 
-        <div>
-          <input type="button" value="4" />
-          <input type="button" value="5" />
-          <input type="button" value="6" />
-          <input type="button" value="-" />
+        <!-- Top Buttons -->
+        <div class="operator-buttons buttons-designs">
+          <input class="changed-color" type="button" value="AC" />
+          <input class="changed-color" type="button" value="DE" />
+          <input class="changed-color" type="button" value="." />
+          <input class="changed-color" type="button" value="/" />
         </div>
 
-        <div>
-          <input type="button" value="1" />
-          <input type="button" value="2" />
-          <input type="button" value="3" />
-          <input type="button" value="+" />
-        </div>
+        <!-- Other Buttons -->
+        <div class="number-buttons buttons-designs">
+          <div>
+            <input type="button" value="7" />
+            <input type="button" value="8" />
+            <input type="button" value="9" />
+            <input class="changed-color" type="button" value="*" />
+          </div>
 
-        <div>
-          <input type="button" value="00" />
-          <input type="button" value="0" />
-          <input type="button" value="=" class="equal" />
+          <div class="buttons-designs">
+            <input type="button" value="4" />
+            <input type="button" value="5" />
+            <input type="button" value="6" />
+            <input class="changed-color" type="button" value="-" />
+          </div>
+
+          <div class="buttons-designs">
+            <input type="button" value="1" />
+            <input type="button" value="2" />
+            <input type="button" value="3" />
+            <input class="changed-color" type="button" value="+" />
+          </div>
+
+          <div class="buttons-designs last">
+            <input type="button" value="00" />
+            <input type="button" value="0" />
+            <input type="button" value="=" class="changed-color equal-to" />
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
