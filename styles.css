@@ -4,27 +4,38 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-body{
-  background-color: #E4F7FE;
+
+body {
+  background-color: #e4f7fe;
 }
 
- .buttons-designs input{
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+.buttons input {
   border: 0;
   outline: 0;
-  width: 60px;
   height: 60px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 3, 3, 0.2);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 3, 3, 0.2);
   background-color: transparent;
   font-size: 20px;
   color: #fff;
-  margin: 10px;
   border-radius: 0.6rem;
   cursor: pointer;
 }
 
- .buttons-designs .equal-to{
-  width: 9rem;
+.buttons input:active {
+  transform: translateY(2px);
 }
- .buttons-designs .changed-color{
-  color:#10d4ee;
+
+.buttons .equal-to {
+  grid-column: span 2;
+}
+
+.buttons .operator-button {
+  color: #10d4ee;
 }
