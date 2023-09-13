@@ -1,24 +1,23 @@
-* {
+body {
+  background-color: #e4f7fe;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-body {
-  background-color: #e4f7fe;
-}
-
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 60px);
   gap: 10px;
+  color: #2c2b2b;
+  padding-bottom: 16px;
 }
 
 .buttons input {
   border: 0;
   outline: 0;
-  height: 60px;
+  height: 65px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
     5px 5px 15px rgba(0, 3, 3, 0.2);
   background-color: transparent;
@@ -38,4 +37,58 @@ body {
 
 .buttons .operator-button {
   color: #10d4ee;
+}
+
+.buttons > .dot {
+  padding-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  height: 560px;
+  width: 340px;
+  background-color: #2c2b2b;
+  border-radius: 8px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
+    5px 5px 15px rgba(0, 3, 3, 0.3);
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  gap: 24px;
+}
+
+.display > input,
+.display > output,
+.display > input::placeholder {
+  outline: none;
+  border: transparent;
+  background-color: inherit;
+  width: 100%;
+  text-align: right;
+  font-weight: 100;
+}
+
+.display > input,
+.display > input::placeholder {
+  font-size: 48px;
+  color: #fff;
+}
+
+.display > output {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
 }
