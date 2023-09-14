@@ -93,3 +93,14 @@ form {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.6);
 }
+
+input[type="text"] {
+  text-align: right;
+  outline: none;
+  border: transparent;
+  background-color: inherit;
+  width: 80%;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: -40px;
+}
