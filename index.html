@@ -9,21 +9,15 @@
 
   <body>
     <div class="container">
-      <!-- Display Screen -->
-      <!-- <form>
-        <div class="display">
-          <output> </output>
-          <input type="text" class="display"/>
-        </div>  -->
-
       <form>
         <input type="text" class="display" id="calc-input" />
         <output> </output>
 
         <!-- Buttons -->
         <div class="buttons">
-          <input class="operator-button" type="button" value="AC" />
-          <input class="operator-button" type="button" value="DE" />
+          <input class="operator-button clear" type="button" onclick="clr('AC')"  value="AC"/>
+          <input class="operator-button clear" type="button" onclick="del('DC')" value="DE" />
+          
           <input
             class="operator-button dot"
             type="button"
