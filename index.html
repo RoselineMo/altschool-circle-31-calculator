@@ -6,42 +6,74 @@
     <title>AltSchool Circle 31 Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="container">
       <!-- Display Screen -->
-      <form>
+      <!-- <form>
         <div class="display">
-          <output>321-123+891=</output>
-          <input type="text" name="display" placeholder="123" />
-        </div>
+          <output> </output>
+          <input type="text" class="display"/>
+        </div>  -->
+
+      <form>
+        <input type="text" class="display" id="calc-input" />
+        <output> </output>
 
         <!-- Buttons -->
         <div class="buttons">
           <input class="operator-button" type="button" value="AC" />
           <input class="operator-button" type="button" value="DE" />
-          <input class="operator-button dot" type="button" value="." />
-          <input class="operator-button" type="button" value="/" />
+          <input
+            class="operator-button dot"
+            type="button"
+            onclick="inputValue('.')"
+            value="."
+          />
+          <input
+            class="operator-button"
+            type="button"
+            onclick="inputValue('/')"
+            value="/"
+          />
 
-          <input type="button" value="7" />
-          <input type="button" value="8" />
-          <input type="button" value="9" />
-          <input class="operator-button" type="button" value="x" />
+          <input type="button" onclick="inputValue(7)" value="7" />
+          <input type="button" onclick="inputValue(8)" value="8" />
+          <input type="button" onclick="inputValue(9)" value="9" />
+          <input
+            class="operator-button"
+            type="button"
+            onclick="inputValue('*')"
+            value="x"
+          />
 
-          <input type="button" value="4" />
-          <input type="button" value="5" />
-          <input type="button" value="6" />
-          <input class="operator-button" type="button" value="-" />
+          <input type="button" onclick="inputValue(4)" value="4" />
+          <input type="button" onclick="inputValue(5)" value="5" />
+          <input type="button" onclick="inputValue(6)" value="6" />
+          <input
+            class="operator-button"
+            type="button"
+            onclick="inputValue('-')"
+            value="-"
+          />
 
-          <input type="button" value="1" />
-          <input type="button" value="2" />
-          <input type="button" value="3" />
-          <input class="operator-button" type="button" value="+" />
+          <input type="button" onclick="inputValue(1)" value="1" />
+          <input type="button" onclick="inputValue(2)" value="2" />
+          <input type="button" onclick="inputValue(3)" value="3" />
+          <input
+            class="operator-button"
+            type="button"
+            onclick='inputValue("+")'
+            value="+"
+          />
 
-          <input type="button" value="00" />
-          <input type="button" value="0" />
+          <input type="button" onclick="inputValue('00')" value="00" />
+          <input type="button" onclick="inputValue(0)" value="0" />
           <input class="operator-button equal-to" type="button" value="=" />
         </div>
       </form>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
