@@ -1,5 +1,6 @@
 const calcInput = document.querySelector("#calc-input");
 const display = document.querySelector('.display');
+const Sum = document.getElementById("sum")
 
 function inputValue(digit) {
   calcInput.value = calcInput.value + digit;
@@ -9,6 +10,7 @@ function inputValue(digit) {
 // Clear and Delete button
 const clr = () => {
   display.value = "";
+  Sum.value = "";
 }
 
 const del = () => {
@@ -16,3 +18,12 @@ const del = () => {
 };
 
 
+function solution () {
+   if (display.value === "") {
+    alert ("Please enter numbers!")
+   } else {
+    let sol = eval(calcInput.value)
+     Sum.textContent = sol
+   }
+   
+}

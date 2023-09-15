@@ -11,7 +11,7 @@
     <div class="container">
       <form>
         <input type="text" class="display" id="calc-input" />
-        <output> </output>
+        <output id="sum"> </output>
 
         <!-- Buttons -->
         <div class="buttons">
@@ -63,7 +63,7 @@
 
           <input type="button" onclick="inputValue('00')" value="00" />
           <input type="button" onclick="inputValue(0)" value="0" />
-          <input class="operator-button equal-to" type="button" value="=" />
+          <input class="operator-button equal-to" onclick="solution()" type="button" value="=" />
         </div>
       </form>
     </div>

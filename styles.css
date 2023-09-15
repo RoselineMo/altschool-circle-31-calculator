@@ -54,7 +54,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  /* gap: 32px; */
   justify-content: center;
   align-items: center;
   height: 560px;
@@ -100,7 +100,19 @@ input[type="text"] {
   border: transparent;
   background-color: inherit;
   width: 80%;
-  font-size: 48px;
+  font-size: 20px;
   color: #fff;
-  margin-bottom: -40px;
+  /* margin-bottom: -40px; */
+}
+
+output {
+  text-align: right;
+  outline: none;
+  border: transparent;
+  background-color: inherit;
+  width: 80%;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 32px;
+  
 }
