@@ -1,9 +1,29 @@
-body {
-  background-color: #e4f7fe;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif;
+  background-color: #e4f7fe;
+}
+
+.container {
+  padding: 10px 20px 20px;
+  box-shadow: 0 4rem 5rem rgba(0, 0, 0, 0.5);
+  background-color: #222;
+  background-color: #0a1214;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .buttons {
@@ -18,12 +38,13 @@ body {
   border: 0;
   outline: 0;
   height: 65px;
+  border: 1px solid #56bfd4;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 3, 3, 0.2);
+    1px 1px 15px rgba(0, 3, 3, 0.2);
   background-color: transparent;
   font-size: 20px;
   color: #fff;
-  border-radius: 0.6rem;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -36,83 +57,32 @@ body {
 }
 
 .buttons .operator-button {
-  color: #10d4ee;
+  color: #76e5fc;
 }
 
 .buttons > .dot {
   padding-bottom: 10px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 72px;
-  margin-bottom: 32px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  /* gap: 32px; */
-  justify-content: center;
-  align-items: center;
-  height: 560px;
-  width: 340px;
-  background-color: #2c2b2b;
-  border-radius: 8px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
-    5px 5px 15px rgba(0, 3, 3, 0.3);
-}
-
-.display {
-  display: flex;
-  flex-direction: column;
-  width: 270px;
-  gap: 24px;
-}
-
-.display > input,
-.display > output,
-.display > input::placeholder {
-  outline: none;
-  border: transparent;
-  background-color: inherit;
-  width: 100%;
-  text-align: right;
-  font-weight: 100;
-}
-
-.display > input,
-.display > input::placeholder {
-  font-size: 48px;
-  color: #fff;
-}
-
-.display > output {
+.display,
+output {
+  font-family: "Montserrat", sans-serif;
+  width: 260px;
+  height: 40px;
   font-size: 24px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-input[type="text"] {
   text-align: right;
-  outline: none;
-  border: transparent;
-  background-color: inherit;
-  width: 80%;
-  font-size: 20px;
   color: #fff;
-  /* margin-bottom: -40px; */
+  background-color: inherit;
+  overflow: auto;
+  border: none;
+  scrollbar-width: none;
 }
 
 output {
-  text-align: right;
-  outline: none;
-  border: transparent;
-  background-color: inherit;
-  width: 80%;
   font-size: 40px;
-  color: #fff;
-  margin-bottom: 32px;
-  
+  margin-bottom: 24px;
+}
+
+output::-webkit-scrollbar {
+  display: none;
 }

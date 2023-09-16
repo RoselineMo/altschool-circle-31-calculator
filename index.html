@@ -3,21 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AltSchool Circle 31 Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <title>AltSchool | Circle 31 Calculator</title>
   </head>
 
   <body>
     <div class="container">
       <form>
+        <!-- Display -->
         <input type="text" class="display" id="calc-input" />
         <output id="sum"> </output>
 
         <!-- Buttons -->
         <div class="buttons">
-          <input class="operator-button clear" type="button" onclick="clr('AC')"  value="AC"/>
-          <input class="operator-button clear" type="button" onclick="del('DC')" value="DE" />
-          
+          <input
+            class="operator-button clear"
+            type="button"
+            onclick="clr('AC')"
+            value="AC"
+          />
+          <input
+            class="operator-button clear"
+            type="button"
+            onclick="del('DC')"
+            value="DE"
+          />
+
           <input
             class="operator-button dot"
             type="button"
@@ -63,7 +80,12 @@
 
           <input type="button" onclick="inputValue('00')" value="00" />
           <input type="button" onclick="inputValue(0)" value="0" />
-          <input class="operator-button equal-to" onclick="solution()" type="button" value="=" />
+          <input
+            class="operator-button equal-to"
+            onclick="solution()"
+            type="button"
+            value="="
+          />
         </div>
       </form>
     </div>
