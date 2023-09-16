@@ -3,7 +3,12 @@ const display = document.querySelector('.display');
 const Sum = document.getElementById("sum")
 
 function inputValue(digit) {
-  calcInput.value = calcInput.value + digit;
+  if (calcInput.value.slice(-1)=== digit) {
+    return;
+  } else {
+    calcInput.value = calcInput.value + digit;
+  }
+
 }
 
 
